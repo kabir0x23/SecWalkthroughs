@@ -1,10 +1,12 @@
-[lab link](https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-in-error-messages)
+[Lab: Information disclosure in error messages](https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-in-error-messages)
 
 This lab's verbose error messages reveal that it is using a vulnerable version of a third-party framework. To solve the lab, obtain and submit the version number of this framework.
 
 ---
+## Solution
 
-- `https://0aed00ec039d37ad82509afe006c0031.web-security-academy.net/product?productId=%3Cscript%3Ealert(12)%3C/script%3E`
+- payload: `<script>alert(12)</script>`
+- `URL/product?productId=%3Cscript%3Ealert(12)%3C/script%3E`
 - version `2 2.3.31`
 
 ```java
