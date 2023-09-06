@@ -9,4 +9,4 @@ This lab contains a debug page that discloses sensitive information about the ap
 - do active scan on target
 - you will get `/cgi-bin/phpinfo.php`
 - visit the path
-- ![][./images/02-lab-1.png]
+- ![](./images/02-lab-1.png)
